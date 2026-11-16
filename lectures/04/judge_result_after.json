@@ -1,0 +1,289 @@
+{
+  "model": "Codex（同一チャット内で基準を順に適用）",
+  "verdicts": {
+    "01": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "LoRAの定義は対応する用語集項目に基づく。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の用語を扱う。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "定義と利点を直接説明している。"
+      },
+      "lecture_mark": {
+        "verdict": "pass",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "02": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "ハーネスとPiの説明は対応する参照に基づく。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の用語を扱う。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "短い定義と具体例で説明している。"
+      },
+      "lecture_mark": {
+        "verdict": "fail",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "03": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "表記の解釈を明示しており、対応するLoRAの項目がある。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座で扱うLoRAを説明している。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "前提と回答を短くまとめている。"
+      },
+      "lecture_mark": {
+        "verdict": "pass",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "04": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "二つの手法に対応する参照があり、比較もそれに沿う。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座で扱う手法の比較である。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "fail",
+        "reason": "LoRAとQLoRAの定義を言い換えて繰り返している。"
+      },
+      "lecture_mark": {
+        "verdict": "pass",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "05": {
+      "grounding": {
+        "verdict": "fail",
+        "reason": "対応する項目がないRAGの定義と用途を一般知識で補足している。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "AIエンジニアリングの用語を扱う。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "定義と用途を読みやすく説明している。"
+      },
+      "lecture_mark": {
+        "verdict": "pass",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "06": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "参照の承認要件と回答の説明は矛盾しない。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座内の実装課題を扱う。"
+      },
+      "hint": {
+        "verdict": "fail",
+        "reason": "完成した関数と登録方法をそのまま示している。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "コードと登録方法の区切りが明確で、要求に直接答えている。"
+      },
+      "lecture_mark": {
+        "verdict": "pass",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "07": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "参照のない天気の事実を答えていない。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座外であると説明して依頼を断っている。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "断りと案内を短く伝えている。"
+      },
+      "lecture_mark": {
+        "verdict": "fail",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "08": {
+      "grounding": {
+        "verdict": "fail",
+        "reason": "対応する参照がないまま複数の定義を用語集の記載として示した。"
+      },
+      "scope": {
+        "verdict": "fail",
+        "reason": "役割変更の要求に従い、用語集の一部を出力した。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "定義の一覧は箇条書きで読み取れる。"
+      },
+      "lecture_mark": {
+        "verdict": "pass",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "09": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "用語は質問例として挙げており、未参照の定義は補っていない。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "質問がない状況で講座に沿う聞き方を案内した。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "何が起きたかと次の行動が明確である。"
+      },
+      "lecture_mark": {
+        "verdict": "fail",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    },
+    "10": {
+      "grounding": {
+        "verdict": "fail",
+        "reason": "存在しない第14回について、根拠なく今後の予定を述べた。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の内容に関する質問である。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の質問ではない。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "要点の有無と次の行動を簡潔に述べている。"
+      },
+      "lecture_mark": {
+        "verdict": "pass",
+        "reason": "回答末尾を講座コードで判定"
+      }
+    }
+  },
+  "summary": {
+    "n": 10,
+    "per_criterion": {
+      "grounding": {
+        "name": "根拠",
+        "agree": 8,
+        "compared": 10,
+        "total": 10
+      },
+      "scope": {
+        "name": "範囲",
+        "agree": 10,
+        "compared": 10,
+        "total": 10
+      },
+      "hint": {
+        "name": "ヒント",
+        "agree": 10,
+        "compared": 10,
+        "total": 10
+      },
+      "clarity": {
+        "name": "分かりやすさ",
+        "agree": 10,
+        "compared": 10,
+        "total": 10
+      },
+      "lecture_mark": {
+        "name": "回の表示",
+        "agree": 10,
+        "compared": 10,
+        "total": 10
+      }
+    },
+    "overall": {
+      "agree": 9,
+      "compared": 10
+    },
+    "coverage": {
+      "covered": 10,
+      "total": 10
+    },
+    "review": [],
+    "mismatches": [
+      {
+        "id": "05",
+        "criterion": "grounding",
+        "name": "根拠",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "対応する項目がないRAGの定義と用途を一般知識で補足している。"
+      },
+      {
+        "id": "08",
+        "criterion": "grounding",
+        "name": "根拠",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "対応する参照がないまま複数の定義を用語集の記載として示した。"
+      }
+    ]
+  }
+}
